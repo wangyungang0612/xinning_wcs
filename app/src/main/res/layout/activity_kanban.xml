@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mjzz" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分拣口"
+                android:textColor="#000000"
+                android:textSize="45dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="九号口"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="料号" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="PO" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="PO Line" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="PO总数" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="未入库数量" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="整板数量" />
+
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="尾板数量" />
+        <TextView
+            style="@style/textview_query_style1"
+            android:text="分拣类型" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="#00000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="热塑" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="Bundle" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="Overpack" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/footer_title_text_color"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/footer_title_text_color"/>
+                    <TextView
+                        android:id="@+id/resuTextView"
+                        style="@style/textview_indent_style1"
+                        android:text="Y" />
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/footer_title_text_color"/>
+
+                    <TextView
+                        android:id="@+id/bundleTextView"
+                        style="@style/textview_indent_style1"
+                        android:text="N" />
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/footer_title_text_color"/>
+                    <TextView
+                        android:id="@+id/overpackTextView"
+                        style="@style/textview_indent_style1"
+                        android:text="N" />
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/footer_title_text_color"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/footer_title_text_color"/>
+                <ListView
+                    android:visibility="gone"
+                    android:id="@+id/listview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="#00000000"/>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="MRP" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="GTIN" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="PRC" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="#00000000"/>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="物料名称" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="料号" />
+                    <TextView
+                        style="@style/textview_query_style1"
+                        android:text="通俗名称" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="#00000000"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/che" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

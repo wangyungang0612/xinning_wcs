@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/footer_title_text_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+        <TextView
+            android:id="@+id/liaohaoTextView"
+            style="@style/textview_indent_style1"
+            android:text="料号" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+        <TextView
+            android:id="@+id/poTextView"
+            style="@style/textview_indent_style1"
+            android:text="PO" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+
+        <TextView
+            android:id="@+id/po_lineTextView"
+            style="@style/textview_indent_style1"
+            android:text="PO Line" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+        <TextView
+            android:id="@+id/po_allnumTextView"
+            style="@style/textview_indent_style1"
+            android:text="PO总数" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+
+        <TextView
+            android:id="@+id/no_numTextView"
+            style="@style/textview_indent_style1"
+            android:text="未入库数量" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+        <TextView
+            android:id="@+id/allban_numTextView"
+            style="@style/textview_indent_style1"
+            android:text="整板数量"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+        <TextView
+            android:id="@+id/weiban_numTextView"
+            style="@style/textview_indent_style1"
+            android:text="尾板数量" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+
+        <TextView
+            android:id="@+id/fenjian_numTextView"
+            style="@style/textview_indent_style1"
+            android:text="分拣类型" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/footer_title_text_color"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/footer_title_text_color"/>
+</LinearLayout>
